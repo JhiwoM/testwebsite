@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verdant — Plant Boutique</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#home">verdant<span>+</span></a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#register">Register</a>
+      <a href="#login">Log In</a>
+      <button id="logoutBtn" class="nav-logout hidden">Log Out</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">PLANTS • POTS • LIVING SPACES</p>
+        <h1>Bring a little<br><em>green</em> home.</h1>
+        <p class="hero-text">Simple, beautiful plants chosen to make everyday spaces feel calmer and more alive.</p>
+        <div class="hero-actions">
+          <a href="#register" class="btn primary">Create an account</a>
+          <a href="#about" class="btn secondary">Learn more</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="sun"></div>
+        <div class="leaf leaf-one"></div>
+        <div class="leaf leaf-two"></div>
+        <div class="leaf leaf-three"></div>
+        <div class="pot"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div>
+        <p class="eyebrow">ABOUT US</p>
+        <h2>Thoughtfully grown.<br>Simply presented.</h2>
+      </div>
+      <div class="about-text">
+        <p>Verdant is a small plant boutique focused on bringing easy-care greenery into homes, studios, and workspaces.</p>
+        <p>We believe plants don't need to be complicated. Browse our collection, discover something that fits your space, and let your room grow with you.</p>
+      </div>
+    </section>
+
+    <section id="register" class="section form-section">
+      <div class="form-card">
+        <p class="eyebrow">JOIN VERDANT</p>
+        <h2>Create your account</h2>
+        <p class="muted">Register to unlock our private plant gallery.</p>
+        <form id="registerForm">
+          <label>Full name<input id="regName" type="text" placeholder="Your name" required></label>
+          <label>Email<input id="regEmail" type="email" placeholder="you@example.com" required></label>
+          <label>Password<input id="regPassword" type="password" placeholder="At least 6 characters" minlength="6" required></label>
+          <button class="btn primary full" type="submit">Register</button>
+        </form>
+        <p id="registerMessage" class="message"></p>
+      </div>
+    </section>
+
+    <section id="login" class="section form-section">
+      <div class="form-card">
+        <p class="eyebrow">WELCOME BACK</p>
+        <h2>Log in</h2>
+        <p class="muted">Access the private item gallery.</p>
+        <form id="loginForm">
+          <label>Email<input id="loginEmail" type="email" placeholder="you@example.com" required></label>
+          <label>Password<input id="loginPassword" type="password" placeholder="Your password" required></label>
+          <button class="btn primary full" type="submit">Log in</button>
+        </form>
+        <p id="loginMessage" class="message"></p>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery-section hidden">
+      <div class="gallery-heading">
+        <div>
+          <p class="eyebrow">MEMBERS COLLECTION</p>
+          <h2>Our plants</h2>
+        </div>
+        <p class="muted">Welcome, <strong id="welcomeName">plant lover</strong>.</p>
+      </div>
+      <div class="gallery-grid">
+        <article class="plant-card">
+          <div class="plant-image monstera"><span>🌿</span></div>
+          <div class="plant-info"><h3>Monstera</h3><p>Bold leaves • Indoor</p><strong>₱850</strong></div>
+        </article>
+        <article class="plant-card">
+          <div class="plant-image snake"><span>🌱</span></div>
+          <div class="plant-info"><h3>Snake Plant</h3><p>Easy care • Indoor</p><strong>₱650</strong></div>
+        </article>
+        <article class="plant-card">
+          <div class="plant-image pilea"><span>🍃</span></div>
+          <div class="plant-info"><h3>Pilea</h3><p>Compact • Bright light</p><strong>₱480</strong></div>
+        </article>
+        <article class="plant-card">
+          <div class="plant-image ficus"><span>🌿</span></div>
+          <div class="plant-info"><h3>Fiddle Leaf</h3><p>Statement plant • Indoor</p><strong>₱1,250</strong></div>
+        </article>
+        <article class="plant-card">
+          <div class="plant-image calathea"><span>🍃</span></div>
+          <div class="plant-info"><h3>Calathea</h3><p>Patterned leaves • Humid</p><strong>₱920</strong></div>
+        </article>
+        <article class="plant-card">
+          <div class="plant-image cactus"><span>🌵</span></div>
+          <div class="plant-info"><h3>Mini Cactus</h3><p>Low maintenance • Sunny</p><strong>₱280</strong></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo">verdant<span>+</span></div>
+    <p>Grow something good.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
